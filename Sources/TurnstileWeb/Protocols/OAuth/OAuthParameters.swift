@@ -70,7 +70,7 @@ public class OAuthParameters {
     
     /// OAuth Value for Header
     public var header: String {
-        let partialHeader = parameterDictionary.sorted { $0.0.key < $0.1.key }
+        let partialHeader = parameterDictionary.sorted { $0.key < $1.key }
         .map { (keyValuePair) -> String in
             // From Twitters docs https://dev.twitter.com/oauth/overview/percent-encoding-parameters
             var allowedChars = CharacterSet(charactersIn: "-._~")
