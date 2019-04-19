@@ -2,16 +2,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "Turnstile",
-	products: [
-    .library(name: "Turnstile", targets: ["Turnstile"]),
-	],
+    name: "ts",
+ products: [
+        .library(name: "Turnstile", targets: ["Turnstile"]),
+    ],
     targets: [
         .target(
             name: "Turnstile",
             dependencies: ["TurnstileCrypto"]),
         .target(
-            name: "TurnstileCrypto"),
+            name: "TurnstileCrypto",
+	   dependencies: []),
         .target(
             name: "TurnstileWeb",
             dependencies: ["Turnstile"]),
