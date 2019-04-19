@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ts",
+    name: "Turnstile",
  products: [
         .library(name: "Turnstile", targets: ["Turnstile"]),
     ],
