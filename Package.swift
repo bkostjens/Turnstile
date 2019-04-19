@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "Turnstile",
+	products: [
+    .library(name: "Turnstile", targets: ["Turnstile"]),
+	],
     targets: [
         .target(
             name: "Turnstile",
